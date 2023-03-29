@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link rel="icon" href="css/images/translation.png">
+
+    <!-- Title -->
+    <title>Language Translator</title>
+
+<!-- Font-Awesome Script -->
+<script src="https://kit.fontawesome.com/8e7cdbc65b.js" crossorigin="anonymous"></script>
+
+<!-- Bootstrap CDN -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+    <div class="intro">
+    <h1 class="head">Language Translator</h1>
+    </div>
+    <div class="container ">
+        <div class="row d-flex justify-content-center mt-5">
+            <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                <div class="card py-3 px-2">
+                    <div class="division">
+                        <div class="row">
+                            <div class="col-3">
+                                <div class="line l"></div>
+                            </div>
+                            <div class="col-6"><span>Language Translator</span></div>
+                            <div class="col-3">
+                                <div class="line r"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="myform" method="post">
+                         <input type="text" autocomplete="off" class="form-control" placeholder="Text in English" name="en_txt"> 
+                         <div class="dropdown">
+                            <!-- <label for="lang">    Translate to</label> -->
+                            <select name="languages" id="lang">
+                            <!-- <input type="text" autocomplete="off" class="form-control" placeholder="Translate to" name="">  -->
+                              <option value="">Select Language</option>
+                              <option value="ar">Arabic</option>
+                              <option value="bn">Bengali</option>
+                              <option value="zh-TW">Chinese</option>
+                              <option value="fr">French</option>
+                              <option value="de">German</option>
+                              <option value="el">Greek</option>
+                              <option value="gu">Gujrati</option>
+                              <option value="hi">Hindi</option>
+                              <option value="it">Italian</option>
+                              <option value="ja">Japanese</option>
+                              <option value="kn">Kannada</option>
+                              <option value="ko">Korean</option>
+                              <option value="mr">Marathi</option>
+                              <option value="ru">Russian</option>
+                              <option value="ta">Tamil</option>
+                              <option value="uk">Ukrainian</option>
+                              <option value="ur">Urdu</option>
+                            </select>
+                         <div class="form-group mt-3"> <button type="submit" class="btn btn-block btn-primary btn-lg"><small><i class="fas fa-language"></i> Translate </small></button> </div>
+                         <input  type="" class="form-control" placeholder="Translated Text" name="hi_txt" value= "<%= hi_txt %>"> 
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="box-mid">  
+        <div class="output">
+            Hindi translation is: <%= hi_txt %>
+        </div>
+</div> -->
+</body>
+</html>
